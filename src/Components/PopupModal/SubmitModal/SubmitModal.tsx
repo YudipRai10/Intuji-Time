@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import cross from "../../../assets/cross.png";
 import { SubmitCancelButton, SubmitConfirmButton } from "../../ui/button";
-import { TimeContext } from "../../Context/Context";
+import { TimeContext } from "../../../Context/Context";
 
 interface SubmitModalProps {
   submit: boolean;

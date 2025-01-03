@@ -2,7 +2,7 @@ import React, { useContext, useState } from "react";
 import TimeInput from "../TimeInput/TimeInput";
 import TimeModal from "../PopupModal/TimeModal/TimeModal";
 import SubmitModal from "../PopupModal/SubmitModal/SubmitModal";
-import { TimeContext } from "../Context/Context";
+import { TimeContext } from "../../Context/Context";
 import SuccessModal from "../PopupModal/SuccessModal/SuccessModal";
 
 function Timespread(): React.ReactElement {
