@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Red Hat Display";
+}
+
+.toggle .toggle-btn::before {
+  position: absolute;
+  content: "";
+  background-color: white;
+  width: 18px;
+  height: 18px;
+  margin: 1.4px;
+  border-radius: 49px;
+  transition: 0.3s ease-out;
+}
+.toggle input:checked + .toggle-btn {
+  background-color: #16a34a;
+}
+.toggle input:checked + .toggle-btn::before {
+  transform: translateX(23.5px);
+}
+
+.login-bg {
+  @apply bg-login_bg bg-no-repeat bg-cover bg-center h-screen;
+}
+
+.login-container {
+  @apply flex-col gap-y-14 bg-[#fff] p-10 md:min-w-[658px] md:h-[408px] rounded-xl shadow-md;
+}
+
+.google-button {
+  @apply font-extrabold bg-black text-white py-4 px-12 rounded-full shadow-lg text-xs sm:text-base flex items-center gap-4;
+}
+
+.date-text {
+  @apply font-extrabold text-xl text-[#0C0A09] tracking-wide;
+}
+
+.prev-date {
+  @apply bg-[#FAFAF9] cursor-default text-center rounded-full flex gap-7 items-center w-12 h-12 transition-all duration-500 ease-out overflow-hidden hover:w-32 pl-3.3;
+}
+
+.next-date {
+  @apply bg-[#FAFAF9] cursor-default text-start rounded-full flex gap-7 items-center w-12 h-12 transition-all duration-500 ease-out overflow-hidden hover:w-32 pr-3.3 flex-row-reverse;
+}
+
+.body-scroll-container {
+  @apply flex-grow max-w-[1336px] h-[47.5rem] mr-20 py-5 overflow-y-auto scroll-smooth hide-scrollbar;
+}
+
+.gmt-text {
+  @apply font-semibold text-sm text-[#A8A29E] -rotate-90;
+}
+/* Hide scrollbar for Chrome, Safari and Opera */
+.hide-scrollbar::-webkit-scrollbar {
+  display: none !important;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.hide-scrollbar {
+  -ms-overflow-style: none !important; /* IE and Edge */
+  scrollbar-width: none !important; /* Firefox */
+}
+
+.div-container {
+  @apply flex justify-between items-center max-w-[1336px];
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+.px-resp {
+  @apply px-10 xl:px-0;
+}
+
+.submit-timesheet-container {
+  @apply bg-white flex items-center justify-between mx-auto max-w-[1336px] w-full px-10 lg:px-4 shadow-md rounded-2xl sticky bottom-2;
+}
+.submit-timesheet-button {
+  @apply bg-[#C71D1D] text-white text-base font-extrabold py-4 px-12 rounded-lg hover:shadow-lg;
+}
