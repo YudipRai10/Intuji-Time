@@ -5,7 +5,6 @@ import {
   getPrevDate,
   getTodayDate,
 } from "../../helper/date.helper";
-import Calender from "../Calender/Calender";
 
 function Datebar(): React.ReactElement {
   const [showCalender, setShowCalender] = useState<boolean>(false);
@@ -41,7 +40,7 @@ function Datebar(): React.ReactElement {
         >
           {currentDate}
         </p>
-        {showCalender && <Calender />}
+        {/* {showCalender && <Calender />} */}
 
         {/* Next Date Button */}
         <div className="w-32 flex justify-end">
