@@ -3,7 +3,7 @@ import Duration from "../TabComponents/Duration";
 import { CancelButton, SaveButton } from "../ui/button";
 import BreakType from "../TabComponents/BreakType";
 import Info from "../TabComponents/Info";
-import { getUseForm } from "../../useForm/useForm";
+import { getUseForm } from "../../helper/useForm.helper";
 
 interface BreakProps {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;

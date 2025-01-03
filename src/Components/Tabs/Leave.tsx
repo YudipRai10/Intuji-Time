@@ -3,7 +3,7 @@ import { CancelButton, SaveButton } from "../ui/button";
 import LeaveToggle from "../TabComponents/LeaveToggle";
 import LeaveType from "../TabComponents/LeaveType";
 import Info from "../TabComponents/Info";
-import { getUseForm } from "../../useForm/useForm";
+import { getUseForm } from "../../helper/useForm.helper";
 
 interface LeaveProps {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;

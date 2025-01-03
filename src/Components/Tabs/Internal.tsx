@@ -4,7 +4,7 @@ import Duration from "../TabComponents/Duration";
 import InternalFocus from "../TabComponents/InternalFocus";
 import Comment from "../TabComponents/Comment";
 import Info from "../TabComponents/Info";
-import { getUseForm } from "../../useForm/useForm";
+import { getUseForm } from "../../helper/useForm.helper";
 
 interface InternalProps {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;

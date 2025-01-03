@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import dropdown_arrow from "../../assets/dropdown.png";
 import search from "../../assets/search-icon.png";
 import { UseFormRegister, UseFormSetValue } from "react-hook-form";
-import { InputProps } from "../../useForm/useForm";
+import { InputProps } from "../../helper/useForm.helper";
 
 interface ExternalClientProps {
   register: UseFormRegister<InputProps>;

@@ -5,7 +5,7 @@ import Comment from "../TabComponents/Comment";
 import ExternalClient from "../TabComponents/ExternalClient";
 import ExternalFocus from "../TabComponents/ExternalFocus";
 import Info from "../TabComponents/Info";
-import { getUseForm } from "../../useForm/useForm";
+import { getUseForm } from "../../helper/useForm.helper";
 
 interface ExternalProps {
   setShowModal: React.Dispatch<React.SetStateAction<boolean>>;

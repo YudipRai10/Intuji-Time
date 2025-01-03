@@ -1,7 +1,7 @@
 import React, { useMemo, useState } from "react";
 import { getTimes } from "../../helper/time.helper";
 import { UseFormRegister, UseFormSetValue } from "react-hook-form";
-import { InputProps } from "../../useForm/useForm";
+import { InputProps } from "../../helper/useForm.helper";
 
 interface DurationProps {
   register: UseFormRegister<InputProps>;

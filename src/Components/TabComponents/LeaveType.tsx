@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { UseFormRegister } from "react-hook-form";
-import { InputProps } from "../../useForm/useForm";
+import { InputProps } from "../../helper/useForm.helper";
 
 interface LeaveTypeProps {
   register: UseFormRegister<InputProps>;

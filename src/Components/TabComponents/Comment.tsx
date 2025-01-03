@@ -1,6 +1,6 @@
 import React from "react";
 import { FieldValues, UseFormRegister } from "react-hook-form";
-import { InputProps } from "../../useForm/useForm";
+import { InputProps } from "../../helper/useForm.helper";
 
 interface CommentProps {
   register: UseFormRegister<InputProps>;
@@ -19,7 +19,7 @@ function Comment({ register, errors }: CommentProps): React.ReactElement {
         className="bg-lightGrayBg border border-lightGray py-3 px-4 outline-none rounded-lg w-full h-32"
       ></textarea>
       {errors.comment && (
-        <p className="text-xs text-red">{errors.comment.message}</p>
+        <p className="text-xs text-textRed">{errors.comment.message}</p>
       )}
     </div>
   );

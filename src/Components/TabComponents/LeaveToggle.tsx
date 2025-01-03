@@ -1,6 +1,6 @@
 import React from "react";
 import { FieldValues, UseFormRegister } from "react-hook-form";
-import { InputProps } from "../../useForm/useForm";
+import { InputProps } from "../../helper/useForm.helper";
 
 interface LeaveToggleProps {
   register: UseFormRegister<InputProps>;
@@ -32,7 +32,7 @@ function LeaveToggle({
 
       {/* Error Message */}
       {errors.leaveToggle && (
-        <p className="text-xs text-red absolute top-6">
+        <p className="text-xs text-textRed absolute top-6">
           {errors.leaveToggle.message}
         </p>
       )}

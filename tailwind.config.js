@@ -25,7 +25,7 @@ export default {
         darkRed: "#991b1b",
         borderGray: "#e7e5e4",
         labelGray: "#78716c",
-        red: "#EF4444",
+        textRed: "#EF4444",
       },
       accentColor: {
         accentBlue: "#3b82f6",

@@ -5,6 +5,7 @@ import {
   getPrevDate,
   getTodayDate,
 } from "../../helper/date.helper";
+import Calender from "../Calender/Calender";
 
 function Datebar(): React.ReactElement {
   const [showCalender, setShowCalender] = useState<boolean>(false);
@@ -27,7 +28,7 @@ function Datebar(): React.ReactElement {
         <div className="w-32">
           <button className="bg-lightGrayBg cursor-default text-center rounded-full flex gap-7 items-center w-12 h-12 pl-3.3 transition-all duration-500 ease-out overflow-hidden hover:w-32">
             <img src={arrow} alt="left-arrow" />
-            <span className="text-base text-nowrap font-bold text-red-600">
+            <span className="text-base text-nowrap font-bold text-textRed">
               {prevDate}
             </span>
           </button>
@@ -40,13 +41,13 @@ function Datebar(): React.ReactElement {
         >
           {currentDate}
         </p>
-        {/* {showCalender && <Calender />} */}
+        {showCalender && <Calender />}
 
         {/* Next Date Button */}
         <div className="w-32 flex justify-end">
           <button className="bg-lightGrayBg cursor-default text-start rounded-full flex gap-7 items-center w-12 h-12 transition-all duration-500 ease-out overflow-hidden hover:w-32 pr-3.3 flex-row-reverse">
             <img src={arrow} alt="right-arrow" className="rotate-180" />
-            <span className="text-base text-nowrap font-bold text-red-600">
+            <span className="text-base text-nowrap font-bold text-textRed">
               {nextDate}
             </span>
           </button>

@@ -1,6 +1,6 @@
 import React from "react";
 import { UseFormRegister, UseFormSetValue } from "react-hook-form";
-import { InputProps } from "../../useForm/useForm";
+import { InputProps } from "../../helper/useForm.helper";
 
 interface InternalFocusProps {
   register: UseFormRegister<InputProps>;
